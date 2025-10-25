@@ -1,4 +1,4 @@
-# FaceCue ML - Requirements
+# FaceCue ML - Deployment Requirements
 # AI-Powered Nutritional Deficiency Detection System
 
 # Core ML Libraries
@@ -20,6 +20,5 @@ streamlit>=1.20.0
 # Data Processing
 pathlib2>=2.3.0
 
-# Optional: For enhanced performance
-# tensorflow>=2.10.0
-# torch>=1.12.0
+# Additional dependencies for deployment
+Pillow>=8.0.0
