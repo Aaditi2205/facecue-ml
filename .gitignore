@@ -1,0 +1,83 @@
+# FaceCue ML - Git Ignore File
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Data files (keep structure but ignore large datasets)
+data/*.csv
+data/*.json
+data/*.pkl
+data/*.png
+data/*.jpg
+data/*.jpeg
+data/*.zip
+data/academic/
+data/kaggle/
+data/facial/
+
+# Model files (too large for git)
+*.pkl
+*.joblib
+*.h5
+*.pb
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Keep important structure files
+!data/
+!scripts/
+!README.md
+!requirements.txt
+!*.md
