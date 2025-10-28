@@ -447,6 +447,39 @@ if __name__ == "__main__":
             f.write(combiner_script)
         
         print("✓ Created dataset combiner: scripts/combine_real_datasets.py")
+    
+    def create_dataset_inventory(self, output_file="data/dataset_inventory.json"):
+        """Scan data/ subfolders and create a simple JSON inventory of available datasets."""
+        import json
+        from pathlib import Path
+        import pandas as pd
+
+        inventory = {}
+        for sub in ["academic", "government", "kaggle", "images"]:
+            dirpath = self.data_dir / sub
+            if not dirpath.exists():
+                continue
+            for file in dirpath.rglob("*"):
+                if not file.is_file():
+                    continue
+                key = file.as_posix()
+                try:
+                    if file.suffix.lower() == ".csv":
+                        df = pd.read_csv(file)
+                        inventory[key] = {
+                            "samples": int(len(df)),
+                            "features": int(len(df.columns)),
+                            "path": key
+                        }
+                    else:
+                        inventory[key] = {"path": key, "note": f"ext={file.suffix}"}
+                except Exception as e:
+                    inventory[key] = {"path": key, "error": str(e)}
+        out = Path(output_file)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(inventory, indent=2), encoding="utf-8")
+        print(f"✓ Created dataset inventory: {out}")
+        return out.as_posix()
 
 def main():
     print("=== FaceCue ML - Real Dataset Downloader ===")
