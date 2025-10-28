@@ -1,0 +1,61 @@
+{
+  "data/academic/student-mat.csv": {
+    "samples": 395,
+    "features": 1,
+    "path": "data/academic/student-mat.csv"
+  },
+  "data/academic/student-merge.R": {
+    "path": "data/academic/student-merge.R",
+    "note": "ext=.R"
+  },
+  "data/academic/student-por.csv": {
+    "samples": 649,
+    "features": 1,
+    "path": "data/academic/student-por.csv"
+  },
+  "data/academic/student.txt": {
+    "path": "data/academic/student.txt",
+    "note": "ext=.txt"
+  },
+  "data/academic/student_performance.zip": {
+    "path": "data/academic/student_performance.zip",
+    "note": "ext=.zip"
+  },
+  "data/academic/uci_heart_disease.csv": {
+    "samples": 303,
+    "features": 14,
+    "path": "data/academic/uci_heart_disease.csv"
+  },
+  "data/kaggle/Final_data.csv": {
+    "samples": 20000,
+    "features": 54,
+    "path": "data/kaggle/Final_data.csv"
+  },
+  "data/kaggle/heart-failure-dataset.zip": {
+    "path": "data/kaggle/heart-failure-dataset.zip",
+    "note": "ext=.zip"
+  },
+  "data/kaggle/heart.csv": {
+    "samples": 918,
+    "features": 12,
+    "path": "data/kaggle/heart.csv"
+  },
+  "data/kaggle/life-style-data.zip": {
+    "path": "data/kaggle/life-style-data.zip",
+    "note": "ext=.zip"
+  },
+  "data/kaggle/meal_metadata.csv": {
+    "samples": 168,
+    "features": 54,
+    "path": "data/kaggle/meal_metadata.csv"
+  },
+  "data/kaggle/sleep-health-and-lifestyle-dataset.zip": {
+    "path": "data/kaggle/sleep-health-and-lifestyle-dataset.zip",
+    "note": "ext=.zip"
+  },
+  "data/kaggle/Sleep_health_and_lifestyle_dataset.csv": {
+    "samples": 374,
+    "features": 13,
+    "path": "data/kaggle/Sleep_health_and_lifestyle_dataset.csv"
+  }
+}
